@@ -1,0 +1,31 @@
+body {
+    margin: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+.serihu {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    width: auto;
+    min-width: 150px;
+    max-width: 450px;
+    margin-left: 20%;
+    line-height: 34px;
+    font-size: 20px;
+    border: 3px solid #1d4592;
+    z-index: 0;
+}
