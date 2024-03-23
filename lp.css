@@ -1,3 +1,4 @@
+
 #syoumei_setumei{
     text-align: center;
 }
@@ -54,3 +55,91 @@
     font-size: 22px; 
     font-weight: 700;
 }
+
+body {
+    margin: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+.serihu {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    width: auto;
+    min-width: 150px;
+    max-width: 450px;
+    margin-left: 20%;
+    line-height: 34px;
+    font-size: 20px;
+    border: 3px solid #1d4592;
+    z-index: 0;
+}
+
+.content1{
+    margin:5rem 10rem;
+}
+
+.character_beer{
+    height:30rem;
+    width:auto;
+    margin-left:10rem;
+}
+
+.flex{
+    display:flex;
+}
+
+.first_question{
+    font-size:5rem;
+    text-align:center;
+}
+
+.text1{
+    margin-top:8rem;
+    font-size:1.8rem;
+}
+
+.text2{
+    font-size:2rem;
+    margin-top:2rem;
+}
+
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  .scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+  }
+  .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .scroll-infinity__list--left {
+    animation: infinity-scroll-left 10s infinite linear 0.5s both;
+  }
+  .scroll-infinity__item {
+    width: calc(100vw / 6);
+  }
+  .scroll-infinity__item > img {
+    width: 100%;
+  }
