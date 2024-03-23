@@ -1,0 +1,56 @@
+#syoumei_setumei{
+    text-align: center;
+}
+
+#syoumei_img{
+    display: flex;
+    justify-content: center;
+    background-image: url('syoumei_back.jpg');
+}
+
+#syoumei_img1{
+    width: 600px;
+    height: 500px;
+    border: 7px solid #52c7df;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#syoumei_img2{
+    width: 600px;
+    height: 500px;
+    border: 7px solid #52c7df;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 60px;
+}
+
+#syoumei_memo{
+    position: absolute;
+    top: 14%; 
+    left: 70%; 
+    transform: rotate(20deg);
+    background-color: rgb(255, 223, 106); 
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px; 
+    color: #000; 
+    font-size: 22px; 
+    font-weight: 700;
+}
+
+#syoumei_memo2{
+    position: absolute;
+    top: 13%; 
+    left: 30%; 
+    transform: rotate(20deg);
+    background-color: rgb(255, 223, 106); 
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px; 
+    color: #000; 
+    font-size: 22px; 
+    font-weight: 700;
+}
