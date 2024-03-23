@@ -1,0 +1,15 @@
+.introduction {
+  background-image: url("./image/vision_bg.png"); /* 背景画像のパスを指定 */
+  background-size: cover; /* 画像がコンテナを完全に覆うようにサイズ調整 */
+  background-position: center; /* 画像を中央に配置 */
+  background-repeat: no-repeat; /* 画像の繰り返し無し */
+  padding: 20px; /* 内容と背景画像の間のスペース */
+  color: white; /* テキストカラーを白に設定 */
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    padding: 10px; /* 小さい画面ではパディングを減らす */
+    background-position: top center; /* 小さい画面では画像の位置を調整するかもしれない */
+  }
+}
