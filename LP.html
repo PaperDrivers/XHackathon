@@ -102,7 +102,7 @@
         <p class="text1">
           sakazukiで、君のがんばりをしっかり証明するキャリア証明書を手に入れよう！<br />企業に自分の価値を認めてもらって、夢の職場を見つける一歩を踏み出そう！
         </p>
-        <img class="character_beer" src="./images/character_beer.png" />
+        <img class="character_beer fade-in" src="./images/character_beer.png"  />
       </div>
     </div>
     <div id="tsuyomi">
@@ -114,25 +114,25 @@
           発行元に依存しないから、学生はずっと保有できるんだね！
         </p>
         <br />
-        <img src="Beer.png" width="30%" alt="お酒の妖精" class="beer" />
+        <img src="Beer.png" width="30%" alt="お酒の妖精" class="beer fade-in" />
         <br />
         <br />
         <h3>プライバシーも保護！</h3>
         <p class="serihu">非公開設定や限定公開ができるから、安心だね！</p>
         <br />
-        <img src="Beer.png" width="30%" alt="お酒の妖精" class="beer" />
+        <img src="Beer.png" width="30%" alt="お酒の妖精" class="beer fade-in" />
         <br />
         <br />
         <br />
         <div id="syoumei">
           <h1 id="syoumei_setumei">実際の証明書</h1>
           <div id="syoumei_img">
-            <img src="syoumei.png" alt="実際の証明書" id="syoumei_img1" />
-            <img src="syoumei2.png" alt="実際の証明書" id="syoumei_img2" />
+            <img src="syoumei.png" alt="実際の証明書" id="syoumei_img1" class="fade-in"/>
+            <img src="syoumei2.png" alt="実際の証明書" id="syoumei_img2" class="fade-in"/>
           </div>
           <p id="syoumei_memo">Pita Demo Careerからフィードバック！</p>
           <p id="syoumei_memo2">簡単に経歴を書くだけ！</p>
-            <img src="syoumei3.png" alt="実際の証明書" id="syoumei_img" />
+            <img src="syoumei3.png" alt="実際の証明書" id="syoumei_img" class="fade-in"/>
           </div>
         </div>
         <h3 class="center-text">しかも今なら0円でこのサービスを利用できます</h3>
@@ -142,56 +142,56 @@
       <div class="scroll-infinity__wrap">
         <ul class="scroll-infinity__list scroll-infinity__list--left">
           <li class="scroll-infinity__item">
-            <img src="./images/digital.png" />
+            <img src="./images/digital.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/eiken.png" />
+            <img src="./images/eiken.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item"><img src="./images/NEC.jpg" /></li>
           <li class="scroll-infinity__item">
-            <img src="./images/agaroot.png" />
+            <img src="./images/agaroot.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/lifull.png" />
+            <img src="./images/lifull.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/septeni.png" />
+            <img src="./images/septeni.png" class="fade-in"/>
           </li>
         </ul>
         <ul class="scroll-infinity__list scroll-infinity__list--left">
           <li class="scroll-infinity__item">
-            <img src="./images/digital.png" />
+            <img src="./images/digital.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/eiken.png" />
+            <img src="./images/eiken.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item"><img src="./images/NEC.jpg" /></li>
           <li class="scroll-infinity__item">
-            <img src="./images/agaroot.png" />
+            <img src="./images/agaroot.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/lifull.png" />
+            <img src="./images/lifull.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/septeni.png" />
+            <img src="./images/septeni.png" class="fade-in"/>
           </li>
         </ul>
         <ul class="scroll-infinity__list scroll-infinity__list--left">
           <li class="scroll-infinity__item">
-            <img src="./images/digital.png" />
+            <img src="./images/digital.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/eiken.png" />
+            <img src="./images/eiken.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item"><img src="./images/NEC.jpg" /></li>
           <li class="scroll-infinity__item">
-            <img src="./images/agaroot.png" />
+            <img src="./images/agaroot.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/lifull.png" />
+            <img src="./images/lifull.png" class="fade-in"/>
           </li>
           <li class="scroll-infinity__item">
-            <img src="./images/septeni.png" />
+            <img src="./images/septeni.png" class="fade-in"/>
           </li>
         </ul>
       </div>
@@ -223,5 +223,22 @@
         }
       });
     });
+document.addEventListener('DOMContentLoaded', (event) => {
+  const fadeInElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+      }
+    });
+  }, {
+    threshold: 0.1 // 画像の10%が見えたらトリガー
+  });
+
+  fadeInElements.forEach(element => {
+    observer.observe(element);
+  });
+});
   </script>
 </html>
