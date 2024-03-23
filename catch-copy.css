@@ -1,0 +1,69 @@
+.fixed-icon {
+  position: fixed; /* アイコンを固定 */
+  top: 20px; /* 上から20pxの位置 */
+  left: 20px; /* 左から20pxの位置 */
+
+  padding: 10px; /* アイコン周りの余白 */
+  border-radius: 50%; /* アイコンを円形に */
+  font-size: 24px; /* アイコンのサイズ */
+
+  z-index: 1000; /* 他の要素よりも前面に表示 */
+}
+
+#button-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 右端に寄せる */
+}
+
+#side-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column; /* 初期状態では縦に並べる */
+  align-items: flex-end;
+}
+
+.side-button {
+  margin: 5px 0; /* 上下のマージン */
+  /* padding: 10px; */
+  width: 50px; /* 幅 */
+  height: 50px; /* 高さ */
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+  /* 横向きで画面幅が768px以上の場合 */
+  #side-buttons {
+    flex-direction: row; /* 横に並べる */
+    flex-wrap: wrap; /* 要素が境界に達したら折り返す */
+    width: 120px; /* ボタン2つ分の幅 */
+  }
+
+  .side-button {
+    margin: 5px; /* 上下左右のマージン */
+  }
+}
+
+#home-link .home-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
